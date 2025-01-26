@@ -93,3 +93,56 @@ header input {
     border: 1px solid rgb(225, 225, 225);
     background-color: rgb(245, 245, 245);
 }
+
+footer{
+    background-color: rgb(217, 217, 217);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-section{
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+.footer-section h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.footer-section ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-section ul li{
+    margin: 5px 0;
+}
+.button-n{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #d9d9d9;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+}
+.social-icons{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+.social-icons img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.app-icons{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+.app-icons img{
+    width: 120px;
+    cursor: pointer;
+}
