@@ -126,6 +126,7 @@ footer{
     border: 1px solid;
     border-radius: 5px;
     text-align: center;
+    cursor: pointer;
 }
 .social-icons{
     display: flex;
@@ -146,3 +147,13 @@ footer{
     width: 120px;
     cursor: pointer;
 }
+
+.footer-section a {
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
