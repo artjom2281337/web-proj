@@ -1,0 +1,95 @@
+body {
+    margin: 0px;
+    color: rgb(70, 70, 70);
+    background-color: rgb(245, 245, 245);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    background-color: white;
+    border-bottom: 2px solid rgb(230, 230, 230);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px 30px;
+}
+
+header button {
+    padding: 10px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: rgb(255, 206, 186);
+}
+
+#menu-button, #cart-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 25px;
+}
+
+#header-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login-button {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+#login-button span {
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 30px;
+
+    color: rgb(255, 134, 20);
+    font-size: 20px;
+}
+
+#logo-container img {
+    width:50px;
+    margin-right: 10px;
+}
+
+#searchbar-div {
+    width: 30%;
+}
+
+#searchbar-div input::placeholder {
+    line-height: normal;
+}
+
+header input {
+    padding: 10px 10px;
+    font-size: 18px;
+
+    border-radius: 10px;
+    border: 1px solid rgb(225, 225, 225);
+    background-color: rgb(245, 245, 245);
+}
