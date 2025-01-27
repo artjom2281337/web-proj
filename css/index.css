@@ -21,3 +21,78 @@
 .membership button:hover{
     text-decoration: underline;
 }
+.products, .discounts{
+    margin-top: 40px;
+}
+.products h1, .discounts h1{
+    margin-bottom: 20px;
+}
+.product-list, .discount-list{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    background-color: #FFFFFF;
+}
+.product, .discount{
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 180px;
+}
+.product img, .discount img{
+    max-width: 100%;
+    border-radius: 8px;
+}
+.discount-list img, .product-list img{
+    width: 200px;
+    height: 200px;
+}
+.product a, .discount a{
+    text-decoration: none;
+}
+.app{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #A80000;
+    color: white;
+    border-radius: 15px;
+}
+.app img{
+    width: 200px;
+    margin-bottom: 10px;
+}
+.appimg img{
+    width: 500px;
+    margin-bottom: 10px;
+}
+.prefer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.pref{
+    text-align: center;
+    width: 30px;
+}
+.pref img{
+    width: 200px;
+    margin-bottom: 10px;
+}
+.job{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+.job button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4049AD;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+}
