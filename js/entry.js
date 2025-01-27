@@ -4,6 +4,13 @@ function setActive(active, inactive) {
     let iframe = document.getElementById("entry-container")
     iframe.src = active + ".html"
 
+    if (active == "login") {
+        iframe.classList.add("login-height")
+        iframe.classList.remove("register-height")
+    } else {
+        iframe.classList.add("register-height")
+        iframe.classList.remove("login-height")
+    }
 
     // Get elements
     active = document.getElementById(active)
