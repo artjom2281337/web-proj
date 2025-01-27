@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
+    <title>Login & Register</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/entry.css">
 </head>
 <body>
     <header>
@@ -35,18 +35,22 @@
             </button>
         </nav>
     </header>
-
     <article>
-        <div class="membership">
-            <h1>Are you still not a member of MMarket yet? No worries!</h1>
-            <p>We provide good quality products if you support us.
-                We are keeping are fruits clean and vegetables fresh, because of you!
-                You can help us accomplishing this mission.</p>
-            <button>Become a member now!</button>
-            <img src="img/membr.jpg" alt="Membership">
+        <div class="container">
+            <div class="top-row">
+                <img src="img/entry-icon.png" alt="Entry icon">
+            </div>
+            <div class="choice">
+                <button type="button" id="login" class="active" onclick="setActive('login', 'register')">LOGIN
+                    <div></div>
+                </button>
+                <button type="button" id="register" class="inactive" onclick="setActive('register', 'login')">REGISTER
+                    <div></div>
+                </button>
+            </div>
+            <iframe id="entry-container" src="login.html" frameborder="0"></iframe>
         </div>
     </article>
-
     <footer>
         <div class="footer-section">
             <h3>MMArket</h3>
@@ -109,5 +113,7 @@
             <div class="button-n">Nearest MM</div>
         </div>
     </footer>
+
+    <script src="js/entry.js"></script>
 </body>
 </html>

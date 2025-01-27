@@ -29,6 +29,10 @@ header button:hover {
     background-color: rgb(255, 206, 186);
 }
 
+header a {
+    text-decoration: none;
+}
+
 #menu-button, #cart-button {
     display: flex;
     justify-content: center;
@@ -157,26 +161,3 @@ footer{
     text-decoration: underline;
 }
 
-.membership{
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #AA5E12;
-    border-radius: 15px;
-}
-.membership button{
-    padding: 10px 20px;
-    margin-top: 10px;
-    background-color: #854300;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    color: white;
-}
-.membership img{
-    width: 200px;
-    margin-bottom: 10px;
-}
-.membership button:hover{
-    text-decoration: underline;
-}
