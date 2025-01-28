@@ -1,0 +1,331 @@
+
+
+    /* media query */
+
+    /* Small Screens (Mobile Devices) */
+    @media (max-width: 767px) {
+        #logotext{
+            font-size: 40px;
+        }
+    
+    }
+    
+    /* Medium Screens (Tablets) */
+    @media (min-width: 577px) and (max-width: 768px) {
+      
+    }
+    
+    /* Large Screens (Desktops) */
+    @media (min-width: 769px) {
+    
+      #logotext{
+        font-size: 30px;
+      }
+    
+        .headerdescription{
+            font-size: 25px;
+            font-weight: bold;
+            margin: 4px;
+            color: #ff6a00;
+        }
+        .realdescription{
+            font-size:16px;
+    
+        }
+    }
+    
+            
+    
+            /* main navbar */
+              
+        
+    
+    
+    
+            /* Align nested dropdowns */
+            .dropdown-menu .dropdown-menu {
+                left:100%;
+                top: 0;
+                margin-left: -0.1rem;
+            }
+    
+            /* Keep submenus open when hovering over them */
+            .dropdown:hover > .dropdown-menu {
+                display: block;
+                margin-left:25px;
+                width: 20%;
+            }
+    
+            /* Add some delay for the submenu to appear */
+            .dropdown-menu {
+                display: none;
+                transition: opacity 0.2s ease;
+            }
+    
+            .dropdown:hover > .dropdown-menu {
+                display: block;
+            }
+    
+            /* navbar menu and submenu */
+    
+            .navbar-nav{
+                width: 120px;
+                background-color: white;
+                border-radius: 10%;
+                border: -#de0f0f rgb(106, 7, 7);
+                margin-top: 5px;
+                margin-left: 5%;
+                background: whitesmoke;
+            }
+            #navbarNav{
+            position: absolute; /* Make the dropdown menu overflow on top of the page */
+              top: 100%; /* Align it directly below the navbar */
+              left: 0; /* Align it to the left */
+              right: 0; /* Stretch it across the width of the page */
+              z-index: 1050; /* Make sure it's above the rest of the content */
+            }
+            
+            #Alldropdown{
+                margin-top: -100%;
+                margin-left: 100%;
+            }
+            .dropdown-item:hover{
+                background: #ff6a00;
+            
+            }
+            .nav-menu:hover{
+                background: #ff6a00;
+             
+            }
+            .nav-menu{
+                padding-left: 10%;
+               
+            
+            }
+    
+            /* humbruger icon */
+            #humbruger{
+                margin-left: 3%;
+                margin-right: 1%;
+                height: 40px;
+            }
+                
+            /* logo code  */
+            
+            #logo{
+            height:60px;
+            width: auto;
+    
+            }
+    
+            #logotext{
+                font-weight: bold;
+                color:#ff6a00;
+                margin-bottom: 0px;
+               
+                
+            }
+    
+    
+    
+    
+            /* serach box code has been started from here */
+    
+            .search-box {
+          position: relative;
+        }
+    
+        .search-box input[type="text"] {
+          width: 100%;
+          padding: 10px 40px 10px 15px; /* Extra padding for the icon */
+          font-size: 16px;
+          border: 2px solid #ccc;
+          border-radius: 25px;
+          outline: none;
+          transition: border-color 0.3s ease;
+        }
+    
+        .search-box input[type="text"]:focus {
+          border-color: #007bff;
+        }
+    
+        .search-box .search-icon {
+          position: absolute;
+          top: 50%;
+          right: 25px;
+          transform: translateY(-50%);
+          color: #999;
+          font-size: 0px;
+          pointer-events: none; /* Prevents the icon from blocking input focus */
+        }
+    
+         /* for all icon */
+         .icon{
+            height: 25px;
+            margin-bottom: -0px;
+            font-weight: bold;
+            margin-right: 0px;
+            margin-left: 10px;
+    
+         }
+    
+         .icon:hover{
+            color: #ff6a00;
+         }
+         #login{
+            
+         }
+         
+    
+         /* mainpage css */
+    
+    
+         /* first row banner  */
+    
+         #firstrowBanner{
+            width: 100%;
+            height:auto;
+            background-color: #ffb75f;
+            border-radius: 10px;
+         }
+         #firstrowBanner> div>img{
+            height: 250px;
+            padding-top: 15px;
+         }
+    
+        #firstrowbannerheader{
+            margin-top: 40px;
+            font-size: 20px;
+            color: #854300;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        #firstrowbannertext{
+            font-size: 12px;
+            color: #854300;
+        }
+        #buttonofmember{
+           background-color: #854300;
+           height: 30px;
+           color: white;
+           border-radius: 5px;
+           margin-bottom:40px;
+           width:200px;
+           margin-left: 50px;
+        }
+    
+        /* second row styles started */
+    
+        #secondrowheader{
+            font-size: 18px;
+            margin-top: 20px;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+    
+        #secondrowtext{
+        font-size: 14px;
+        }
+         /* second row product banner  */
+        .items-banner{
+            background-color: #ffffff;
+            border-radius:10px;
+            width: 200px;
+            margin: 5px;
+        }
+        #hearticon{
+        float: right;
+        }
+        .hearticon{
+    
+         height: 20px;
+          margin-top: 10px;
+            
+        }
+        .productimg{
+            margin-top: 40px;
+            height: 100px;
+            
+        }
+        .itemdescriptiontext{
+            font-size: 12px;
+        }
+        .pricesection{
+            margin-top: 10px;
+        }
+        .mainprice{
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        .perkg{
+            font-size: 12px;
+        
+        }
+        #addicon{
+            height: 25px;
+        }
+        #removeicon{
+            height: 25px;
+        }
+        #textInput{
+            width: 20px;
+            margin-bottom: 10px;
+        }
+    
+    
+        /* third row css styles start */
+        #thirdrowbanner{
+            background-color:#A80000 ;
+            border-radius: 10px;
+        }
+        #thirdrowimg{
+            height: 100px;
+        }
+        #thirdrowbannerheader{
+            font-size: 50px;
+            color: white;
+            font-weight: bold;
+        }
+        #thirdrowbannertext{
+            color: white;
+            font-size: 14px;
+        }
+        #thirdrowimg2{
+            height: auto;
+            margin-top: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        } 
+    
+        /* Forth row codding start */
+        #discounts{
+            color: #ff6a00;
+            font-weight: bold;
+            margin-top: 5px;
+    
+        }
+    
+        /* fifth row styles */
+        #fifthrowheader{
+           
+            font-size: 25px;
+           font-weight: bold;
+        }
+        .award{
+            border-radius: 10px;
+        }
+        .headerdescription{
+            font-size: 15px;
+            font-weight: bold;
+            margin: 2px;
+            color: #ff6a00;
+        }
+        .realdescription{
+            font-size:10px;
+    
+        }
+        
+    
+        /* footer  */
+        

@@ -6,157 +6,573 @@
     <title>MMarket - Main Page</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mainpage.css">
 </head>
-<body>
-    <header>
-        <nav id="header-left">
-            <button id="menu-button">
-                <img src="img/menu.png" alt="Menu">
-            </button>
-            <a href="index.html">
-                <div id="logo-container">
-                    <img src="img/logo.png" alt="MMarket Logo">
-                    <h1>MMarket</h1>
-                </div>
-            </a>
-        </nav>
-        <div id="seachbar-div">
-            <input type="text" size="45" placeholder="Search...">
-        </div>
-        <nav id="header-right">
-            <a href="entry.html">
-                <button id="login-button">
-                    <img src="img/user.png" alt="Login">
-                    <span>Login</span>
-                </button>
-            </a>
-            <a href="cart.html">
-                <button id="cart-button">
-                    <img src="img/cart.png" alt="Cart">
-                </button>
-            </a>
-        </nav>
-    </header>
-
-    <article>
-        <div class="membership">
-            <h1>Are you still not a member of MMarket yet? No worries!</h1>
-            <p>We provide good quality products if you support us.
-                We are keeping are fruits clean and vegetables fresh, because of you!
-                You can help us accomplishing this mission.</p>
-            <button>Become a member now!</button>
-            <img src="img/membr.jpg" alt="Membership">
-        </div>
-
-        <div class="products">
-            <h1>Product that might interest you</h1>
-            <p>We made these suggestions based on discount rates, user ratings and popularity.</p>
-            <div class="product-list">
-                <div class="product">
-                    <a href="item.html">
-                        <img src="img/items/banana.png" alt="Banana">
-                        <p>Chiquita banana</p>
-                        <p>1,03€</p>
-                    </a>
-                </div>
-                <div class="product">
-                    <img src="img/items/chicken.jpg" alt="Chicken">
-                    <p>Chicken wings, marinated</p>
-                    <p>5,89€</p>
-                </div>
-                <div class="product">
-                    <img src="img/items/rtx.jpg" alt="RTX">
-                    <p>GeForce RTX 4090 24GB XLR8 VERTO EPIC-X RGB Triple Fan</p>
-                    <p>680€</p>
-                </div>
-                <div class="product">
-                    <img src="img/items/sandwich.jpg" alt="Sandwich">
-                    <p>Sandwich</p>
-                    <p>3,30€</p>
-                </div>
-                <img src="img/product.jpg" alt="Product">
+<body style="background-color: #f5f5f5;">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbarfluid container-fluid position-relative row">
+            <div class="col-3 col-md-2 col-lg-1">
+              <button class="navbar-toggler  " id="humbruger"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+              </button>
             </div>
-        </div>
 
-        <div class="app">
-            <h1>Download our app for more</h1>
-            <p>We are supplying the best discounts on the universe. Better not miss out!</p>
-            <img src="img/mobile.png" alt="Mobile">
-            <div class="appimg">
-                <img src="img/appimg.jpg" alt="App">               
-            </div>
-        </div>
+            <!-- logo -->
 
-        <div class="discounts">
-            <h1>Great Discounts</h1>
-            <p>You shouldn't miss these discounts</p>
-            <div class="discount-list">
-                <img src="img/discount.jpg" alt="Discount">
-                <div class="discount">
-                    <a href="item.html">
-                        <p>Discount!</p>
-                        <img src="img/items/banana.png" alt="Banana">
-                        <p>Chiquita banana</p>
-                        <p>1,03€</p>
-                    </a>
-                </div>
-                <div class="discount">
-                    <p>Discount!</p>
-                    <img src="img/items/chicken.jpg" alt="Chicken">
-                    <p>Chicken wings, marinated</p>
-                    <p>5,89€</p>
-                </div>
-                <div class="discount">
-                    <p>Discount!</p>
-                    <img src="img/items/rtx.jpg" alt="RTX">
-                    <p>GeForce RTX 4090 24GB XLR8 VERTO EPIC-X RGB Triple Fan</p>
-                    <p>680€</p>
-                </div>
-                <div class="discount">
-                    <p>Discount!</p>
-                    <img src="img/items/sandwich.jpg" alt="Sandwich">
-                    <p>Sandwich</p>
-                    <p>3,30€</p>
+            <div class="navbar col-9 col-md-4" >
+                <div class="d-flex container-fluid">
+                    <img src="img/logo.png" class="img-fluid" id="logo">
+                    <p id="logotext">MMarket</p>
+
                 </div>
             </div>
+
+            
+
+             <!-- search box -->
+             <div class="search-box col-8 col-md-4">
+                <input type="text" placeholder="Search here...">
+                <span class="search-icon"><img src="img/search (2).svg" class="icon"></span>
+              </div>
+            
+
+
+
+            <!-- login icon -->
+             <div class="col-lg-1 d-none d-sm-block d-md-none d-lg-block col-1"></div>
+
+            <div class="col-md-2 col-2 d-flex justify-content-around">
+            <div class="d-flex " id="login" >
+                <img src="img/user.png" class="icon">
+                <p class="icon">Login</p>
+            </div>
+
+
+
+            <!-- cart -->
+            <div class=""  >
+                <img src="img/cart.png" class="icon">
+            </div>
+
         </div>
 
-        <div class="prefer">
-            <h1>Why should you prefer us?</h1>
-            <div class="pref">
-                <img src="img/preferimg.jpg" alt="Pref">
-                <h3>Awarded</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error 
-                    sit voluptatem  accusantium doloremque laudantium.</p>
-            </div>
-            <div class="pref">
-                <img src="img/preferimg.jpg" alt="Pref">
-                <h3>Fast Delivery</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error 
-                    sit voluptatem  accusantium doloremque laudantium.</p>
-            </div>
-            <div class="pref">
-                <img src="img/preferimg.jpg" alt="Pref">
-                <h3>Quality</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error 
-                    sit voluptatem  accusantium doloremque laudantium.</p>
+
+
+            <div class=" collapse navbar-collapse dropdown-menu  " id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Top-Level Menu -->
+                    <li class="nav-item">
+
+                        <!-- home linkki -->
+
+                        <a class="nav-link nav-menu" href="index.html"  >
+                         Home
+                        </a>
+
+                        <!-- product linkki -->
+                        <a class="nav-link nav-menu dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                            Products
+                        </a>
+                          
+
+                        <!-- Contact us -->
+
+
+                        <a class="nav-link nav-menu" href="index.html"  >
+                            Contact-Us
+                        </a>
+
+
+                        <!-- Jobs -->
+
+
+                        <a class="nav-link nav-menu" href="index.html"  >
+                           Jobs
+                        </a>
+
+
+                        
+                        <ul class="dropdown-menu" id="Alldropdown" aria-labelledby="menuDropdown">
+                            <!-- First-Level Submenu -->
+                            <li class="dropdown">
+                                <a class="dropdown-item dropdown-toggle " href="#" id="foodDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Food
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="foodDropdown">
+                                    <!-- Second-Level Submenu -->
+                                    <li class="dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="fruitDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Fruit
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="fruitDropdown">
+                                            <!-- Third-Level Submenu -->
+                                            <li><a class="dropdown-item" href="#">Apple</a></li>
+                                            <li><a class="dropdown-item" href="#">Banana</a></li>
+                                            <li><a class="dropdown-item" href="#">Cherry</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Pizza</a></li>
+                                    <li><a class="dropdown-item" href="#">Pasta</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Drinks</a></li>
+                            <li><a class="dropdown-item" href="#">Desserts</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
+    
 
-        <div class="job">
-            <img src="img/job.avif" alt="Job">
-            <h1>Job applications</h1>
-            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis  autem vel eum iure reprehenderit qui in ea voluptate velit esse quam  nihil molestiae consequatur, 
-                vel illum qui dolorem eum fugiat quo  voluptas nulla pariatur?</p>
-            <a href="job.html">
-                <button>Take me to the job opportunities</button>
-            </a>
+
+    <!-- Main body start -->
+     <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10" >
+            <div class="banner row justify-content-around " id="firstrowBanner">
+                <div class="col-1 col-md-1"></div>
+                <div class="col-10 col-md-6">
+                    <p id="firstrowbannerheader">Are you still not a member <br>Of MMarket yet? No worries!</p>
+                    <p id="firstrowbannertext">We provide good quality products if you support us. We <br>keeps are fruits clean and vegetables fresh, because of <br> you! You can help us accomplishing this mission.</p>
+                    <div class="text-center" >
+                        <p id="buttonofmember">Become a member now!</p>
+                    </div>
+                </div>
+                <div class="col-md-3 d-none d-md-block">
+                    <img src="img/membr.png" >
+                </div>
+               
+            </div>
+    
+
+            <!-- Products that might intrest you row -->
+
+            <div>
+                <p id="secondrowheader">Products that might intrest you</p>
+                <p id="secondrowtext">We made these suggestion based on discount rates, user ratings and popularity.
+                     Also we are stealing you data!</p>
+                <div class="row justify-content-around">
+
+                    <!-- items banner  -->
+                    <div class="col-6 col-md-4 col-lg-2 items-banner">
+                        <div id="hearticon" >
+                           <img src="img/heart-3510.svg" class="hearticon">
+                       </div>
+                       <div>
+                           <img src="img/banana.png" class="productimg" >
+                       </div>
+                       <div class="itemdescriptiontext">Fresh bananas form-range Gautemala</div>
+                       <div class="pricesection">
+                           <p class="mainprice">1,03$</p>
+                           <p class="perkg">5,8$/kg</p>
+                       </div>
+                       <div class="d-flex justify-content-around">
+                           <div >
+                               <img src="img/add-button-12017.svg" id="addicon">
+                           </div>
+                           <div>
+                               <input type="text" id="textInput" name="textInput" placeholder="0">
+                           </div>
+                           <div>
+                               <img src="img/minus-circle-symbol-22246.svg" id="removeicon">
+                           </div>
+
+                       </div>
+                   </div>
+                    <!-- items-banner -->
+
+
+
+                    <div class="col-6 col-md-4 col-lg-2 items-banner">
+                         <div id="hearticon" >
+                            <img src="img/heart-3510.svg" class="hearticon">
+                        </div>
+                        <div>
+                            <img src="img/banana.png" class="productimg" >
+                        </div>
+                        <div class="itemdescriptiontext">Fresh bananas form-range Gautemala</div>
+                        <div class="pricesection">
+                            <p class="mainprice">1,03$</p>
+                            <p class="perkg">5,8$/kg</p>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <div >
+                                <img src="img/add-button-12017.svg" id="addicon">
+                            </div>
+                            <div>
+                                <input type="text" id="textInput" name="textInput" placeholder="0">
+                            </div>
+                            <div>
+                                <img src="img/minus-circle-symbol-22246.svg" id="removeicon">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 items-banner">
+                        <div id="hearticon" >
+                           <img src="img/heart-3510.svg" class="hearticon">
+                       </div>
+                       <div>
+                           <img src="img/banana.png" class="productimg" >
+                       </div>
+                       <div class="itemdescriptiontext">Fresh bananas form-range Gautemala</div>
+                       <div class="pricesection">
+                           <p class="mainprice">1,03$</p>
+                           <p class="perkg">5,8$/kg</p>
+                       </div>
+                       <div class="d-flex justify-content-around">
+                           <div >
+                               <img src="img/add-button-12017.svg" id="addicon">
+                           </div>
+                           <div>
+                               <input type="text" id="textInput" name="textInput" placeholder="0">
+                           </div>
+                           <div>
+                               <img src="img/minus-circle-symbol-22246.svg" id="removeicon">
+                           </div>
+
+                       </div>
+                   </div>
+
+                   <div class="col-6 col-md-4 col-lg-2 items-banner">
+                         <div id="hearticon">
+                            <img src="img/heart-3510.svg" class="hearticon">
+                        </div>
+                        <div>
+                            <img src="img/banana.png" class="productimg" >
+                        </div>
+                        <div class="itemdescriptiontext">Fresh bananas form-range Gautemala</div>
+                        <div class="pricesection">
+                            <p class="mainprice">1,03$</p>
+                            <p class="perkg">5,8$/kg</p>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <div >
+                                <img src="img/add-button-12017.svg" id="addicon">
+                            </div>
+                            <div>
+                                <input type="text" id="textInput" name="textInput" placeholder="0">
+                            </div>
+                            <div>
+                                <img src="img/minus-circle-symbol-22246.svg" id="removeicon">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 items-banner">
+                        <div id="hearticon">
+                           <img src="img/heart-3510.svg" class="hearticon">
+                       </div>
+                       <div>
+                           <img src="img/banana.png" class="productimg" >
+                       </div>
+                       <div class="itemdescriptiontext">Fresh bananas form-range Gautemala</div>
+                       <div class="pricesection">
+                           <p class="mainprice">1,03$</p>
+                           <p class="perkg">5,8$/kg</p>
+                       </div>
+                       <div class="d-flex justify-content-around">
+                           <div >
+                               <img src="img/add-button-12017.svg" id="addicon">
+                           </div>
+                           <div>
+                               <input type="text" id="textInput" name="textInput" placeholder="0">
+                           </div>
+                           <div>
+                               <img src="img/minus-circle-symbol-22246.svg" id="removeicon">
+                           </div>
+
+                       </div>
+                   </div>
+
+
+                   <div class="col-6 col-md-4 col-lg-2 items-banner">
+                         <div id="hearticon">
+                            <img src="img/heart-3510.svg" class="hearticon">
+                        </div>
+                        <div>
+                            <img src="img/banana.png" class="productimg" >
+                        </div>
+                        <div class="itemdescriptiontext">Fresh bananas form-range Gautemala</div>
+                        <div class="pricesection">
+                            <p class="mainprice">1,03$</p>
+                            <p class="perkg">5,8$/kg</p>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <div >
+                                <img src="img/add-button-12017.svg" id="addicon">
+                            </div>
+                            <div>
+                                <input type="text" id="textInput" name="textInput" placeholder="0">
+                            </div>
+                            <div>
+                                <img src="img/minus-circle-symbol-22246.svg" id="removeicon">
+                            </div>
+
+                        </div>
+                    </div>
+               </div>
+            </div>
+
+            <!-- Thirdd row  -->
+            <div class="banner row justify-content-around " id="thirdrowbanner">
+                <div class="col-1 col-md-1"></div>
+                <div class="col-10 col-md-4">
+                    <p id="thirdrowbannerheader">Download our app for more</p>
+                    <p id="thirdrowbannertext">We are  supplying the best discounts on <br>the universe. Better not miss out!</p>
+                    <div class="text-center" >
+                       <img src="img/mobile.png" id="thirdrowimg" >
+                    </div>
+                </div>
+                <div class="col-md-6 d-none d-md-block row">
+                    <img src="img/appimg.jpg" id="thirdrowimg2" class="col-md-12" >
+                </div>
+
+               
+            </div>
+
+
+
+            <!-- Great discount code started -->
+             <div>
+                <p id="secondrowheader">Great Discounts</p>
+                <p id="secondrowtext">You shouldn't miss these or you might cry in your sleep.</p>
+             </div>
+              <!-- discount items  -->
+            <div class="justify-content-around row">
+
+                <div class="col-6 col-md-4 col-lg-2 items-banner">
+                    <div class="d-flex justify-content-around">
+                        <p id="discounts">Discounts!</p>
+                       <div id="hearticon" >
+                           <img src="img/heart-3510.svg" class="hearticon">
+                       </div>
+                   </div>
+                   <div>
+                       <img src="img/banana.png" class="productimg" >
+                   </div>
+                   <div class="itemdescriptiontext">Fresh bananas form-range Gautemala</div>
+                   <div class="pricesection">
+                       <p class="mainprice">1,03$</p>
+                       <p class="perkg">5,8$/kg</p>
+                   </div>
+                   <div class="d-flex justify-content-around">
+                       <div >
+                           <img src="img/add-button-12017.svg" id="addicon">
+                       </div>
+                       <div>
+                           <input type="text" id="textInput" name="textInput" placeholder="0">
+                       </div>
+                       <div>
+                           <img src="img/minus-circle-symbol-22246.svg" id="removeicon">
+                       </div>
+
+                   </div>
+               </div>
+                
+               <!-- items2  -->
+               <div class="col-6 col-md-4 col-lg-2 items-banner">
+                 <div class="d-flex justify-content-around">
+                    <p id="discounts">Discounts!</p>
+                   <div id="hearticon" >
+                       <img src="img/heart-3510.svg" class="hearticon">
+                   </div>
+                 </div>
+                <div>
+                   <img src="img/banana.png" class="productimg" >
+                </div>
+                <div class="itemdescriptiontext">Fresh bananas form-range Gautemala</div>
+                <div class="pricesection">
+                   <p class="mainprice">1,03$</p>
+                   <p class="perkg">5,8$/kg</p>
+                </div>
+                <div class="d-flex justify-content-around">
+                   <div >
+                       <img src="img/add-button-12017.svg" id="addicon">
+                   </div>
+                   <div>
+                       <input type="text" id="textInput" name="textInput" placeholder="0">
+                   </div>
+                   <div>
+                       <img src="img/minus-circle-symbol-22246.svg" id="removeicon">
+                   </div>
+
+                </div>
+             </div>
+
+                <!-- iterm 3 -->
+                <div class="col-6 col-md-4 col-lg-2 items-banner">
+                    <div class="d-flex justify-content-around">
+                       <p id="discounts">Discounts!</p>
+                      <div id="hearticon" >
+                          <img src="img/heart-3510.svg" class="hearticon">
+                      </div>
+                    </div>
+                   <div>
+                      <img src="img/banana.png" class="productimg" >
+                   </div>
+                   <div class="itemdescriptiontext">Fresh bananas form-range Gautemala</div>
+                   <div class="pricesection">
+                      <p class="mainprice">1,03$</p>
+                      <p class="perkg">5,8$/kg</p>
+                   </div>
+                   <div class="d-flex justify-content-around">
+                      <div >
+                          <img src="img/add-button-12017.svg" id="addicon">
+                      </div>
+                      <div>
+                          <input type="text" id="textInput" name="textInput" placeholder="0">
+                      </div>
+                      <div>
+                          <img src="img/minus-circle-symbol-22246.svg" id="removeicon">
+                      </div>
+   
+                   </div>
+                </div>
+                <!-- items 4 -->
+                <div class="col-6 col-md-4 col-lg-2 items-banner">
+                    <div class="d-flex justify-content-around">
+                       <p id="discounts">Discounts!</p>
+                      <div id="hearticon" >
+                          <img src="img/heart-3510.svg" class="hearticon">
+                      </div>
+                    </div>
+                   <div>
+                      <img src="img/banana.png" class="productimg" >
+                   </div>
+                   <div class="itemdescriptiontext">Fresh bananas form-range Gautemala</div>
+                   <div class="pricesection">
+                      <p class="mainprice">1,03$</p>
+                      <p class="perkg">5,8$/kg</p>
+                   </div>
+                   <div class="d-flex justify-content-around">
+                      <div >
+                          <img src="img/add-button-12017.svg" id="addicon">
+                      </div>
+                      <div>
+                          <input type="text" id="textInput" name="textInput" placeholder="0">
+                      </div>
+                      <div>
+                          <img src="img/minus-circle-symbol-22246.svg" id="removeicon">
+                      </div>
+   
+                   </div>
+                </div>
+
+                <!-- items 6 -->
+                <div class="col-6 col-md-4 col-lg-2 items-banner">
+                    <div class="d-flex justify-content-around">
+                       <p id="discounts">Discounts!</p>
+                      <div id="hearticon" >
+                          <img src="img/heart-3510.svg" class="hearticon">
+                      </div>
+                    </div>
+                   <div>
+                      <img src="img/banana.png" class="productimg" >
+                   </div>
+                   <div class="itemdescriptiontext">Fresh bananas form-range Gautemala</div>
+                   <div class="pricesection">
+                      <p class="mainprice">1,03$</p>
+                      <p class="perkg">5,8$/kg</p>
+                   </div>
+                   <div class="d-flex justify-content-around">
+                      <div >
+                          <img src="img/add-button-12017.svg" id="addicon">
+                      </div>
+                      <div>
+                          <input type="text" id="textInput" name="textInput" placeholder="0">
+                      </div>
+                      <div>
+                          <img src="img/minus-circle-symbol-22246.svg" id="removeicon">
+                      </div>
+   
+                   </div>
+                </div>
+                <!-- items2  -->
+                <div class="col-6 col-md-4 col-lg-2 items-banner">
+                    <div class="d-flex justify-content-around">
+                        <p id="discounts">Discounts!</p>
+                       <div id="hearticon" >
+                           <img src="img/heart-3510.svg" class="hearticon">
+                       </div>
+                   </div>
+                   <div>
+                       <img src="img/banana.png" class="productimg" >
+                   </div>
+                   <div class="itemdescriptiontext">Fresh bananas form-range Gautemala</div>
+                   <div class="pricesection">
+                       <p class="mainprice">1,03$</p>
+                       <p class="perkg">5,8$/kg</p>
+                   </div>
+                   <div class="d-flex justify-content-around">
+                       <div >
+                           <img src="img/add-button-12017.svg" id="addicon">
+                       </div>
+                       <div>
+                           <input type="text" id="textInput" name="textInput" placeholder="0">
+                       </div>
+                       <div>
+                           <img src="img/minus-circle-symbol-22246.svg" id="removeicon">
+                       </div>
+    
+                   </div>
+                </div>
+               
+                <!-- fithrow codding  -->
+                 <div class="justify-content-around">
+                    <div class="row">
+                        <p id="fifthrowheader" class="col-12">Why should you prefer us?</p>
+                    </div>
+                    <div class=" justify-content-around row">
+                        <div class="col-4">
+                            <img src="img/preferimg.jpg" class="img-fluid award" >
+                            <p class="headerdescription">Award</p>
+                            <p  class="realdescription">Lorem ipsum dolor, sit amet 
+                                consectetur adipisicing elit. Tempore ea laboriosam magnam 
+                                fugit sint consequuntur, cum nam provident placeat 
+                                enim veniam. Accusamus odit dicta maiores iusto non 
+                                nihil minus nulla!
+                            </p>
+                        </div>
+                        <div class="col-4" >
+                            <img src="img/preferimg.jpg" class="img-fluid award">
+                            <p class="headerdescription">Fast Delivery</p>
+                            <p  class="realdescription">Lorem ipsum dolor, sit amet 
+                                consectetur adipisicing elit. Tempore ea laboriosam magnam 
+                                fugit sint consequuntur, cum nam provident placeat 
+                                enim veniam. Accusamus odit dicta maiores iusto non 
+                                nihil minus nulla!
+                            </p>
+                        </div>
+                        <div class="col-4 ">
+                            <img src="img/preferimg.jpg" class="img-fluid award">
+                            <p  class="headerdescription">Quality</p>
+                            <p  class="realdescription">Lorem ipsum dolor, sit amet 
+                                consectetur adipisicing elit. Tempore ea laboriosam magnam 
+                                fugit sint consequuntur, cum nam provident placeat 
+                                enim veniam. Accusamus odit dicta maiores iusto non 
+                                nihil minus nulla!
+                            </p>
+                        </div>
+                    </div>
+
+                 </div>
+
+            </div>
+
+            <!-- main page end  -->
+
+        <!-- body container end  -->
         </div>
-    </article>
+        <div class="col=1"></div>
+     </div>
 
-    <footer>
+     <!-- footer start  -->
+     <footer>
         <div class="footer-section">
             <h3>MMArket</h3>
             <ul>
@@ -218,5 +634,8 @@
             <div class="button-n">Nearest MM</div>
         </div>
     </footer>
+
+    <!-- Include Bootstrap Bundle JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
