@@ -1,5 +1,8 @@
 article{
     padding: 20px;
+    margin: 20px auto 300px auto;
+    max-width: 1500px;
+    width: 80%;
 }
 .search-bar{
     display: flex;

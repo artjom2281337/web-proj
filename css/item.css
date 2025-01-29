@@ -1,6 +1,7 @@
 
 #item-display {
-    width: 75%;
+    width: 80%;
+    max-width: 1500px;
     margin: 15px auto;
 }
 
