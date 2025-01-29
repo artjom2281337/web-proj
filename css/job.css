@@ -3,17 +3,25 @@ article{
 }
 .search-bar{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
 }
-.search-bar button{
+.search-bar button {
     padding: 10px 20px;
     background-color: #A80000;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    font-weight: bold;
 }
+
+.search-bar input {
+    font-size: 16px;
+    line-height: 20px;
+}
+
 .job-list{
     display: flex;
     flex-direction: column;
@@ -39,4 +47,28 @@ article{
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    font-weight: bold;
+}
+
+.job-date {
+    margin: 0 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .search-bar * {
+        width: 100%;
+    }
+
+    .search-bar input {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    button {
+        font-size: 20px;
+    }
+
+    .load-more button {
+        width: 100%;
+    }
 }

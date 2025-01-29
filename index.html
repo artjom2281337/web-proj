@@ -5,38 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MMarket - Entry</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/mainpage.css">
+    <link rel="stylesheet" href="css/index.css">   
     <link rel="icon" href="img/logo.png">
 </head>
 <body>
     <header>
-        <nav id="header-left">
+        
+        <div class="menu">
             <button id="menu-button">
                 <img src="img/menu.png" alt="Menu">
             </button>
+        </div>
+
+        <div class="logo">
             <a href="index.html">
                 <div id="logo-container">
                     <img src="img/logo.png" alt="MMarket Logo">
                     <h1>MMarket</h1>
                 </div>
             </a>
-        </nav>
-        <div id="seachbar-div">
-            <input type="text" size="45" placeholder="Search...">
         </div>
-        <nav id="header-right">
+
+        <div class="searchbar">
+            <div id="seachbar-div">
+                <input type="text" size="45" placeholder="Search...">
+            </div>
+        </div>
+        
+        <div class="entry">
             <a href="entry.html">
                 <button id="login-button">
                     <img src="img/user.png" alt="Login">
                     <span>Login</span>
                 </button>
             </a>
+        </div>  
+
+        <div class="cart">
             <a href="cart.html">
                 <button id="cart-button">
                     <img src="img/cart.png" alt="Cart">
                 </button>
             </a>
-        </nav>
+        </div>
+
     </header>
 
     <main id="main-main">
@@ -54,13 +66,31 @@
             </div>
         </section>
 
-        <section id="main-items-1">
+        <section class="main-items-1">
             <h1>Products that might interest you</h1>
-            <p>We made these suggestions based on discount rates, user ratings and popularity. Also we are stealing your data!</p>
-            <div id="main-items-1-content">
-                <img src="img/product_v2.png">
-                <div id="main-items-1-containers">
-                    <div class="main-items-1-div">
+            <p>We made these suggestions based on discount rates, user ratings and popularity.</p>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <div class="main-items-1-div-top">
+                            <div class="main-items-1-div-top-head">
+                                <span class="discount-tag">Discount!</span>
+                                <button>
+                                    <img src="img/heart.png" alt="">
+                                </button>
+                            </div>
+                            <img src="img/items/banana.png" alt="">
+                        </div>
+                        <div class="main-items-1-div-bot">
+                            <p>Fresh bananas from Turkey</p>
+                            <div class="main-items-1-div-bot-price">
+                                <span>1,03€</span> <br>
+                                <span>5,91€/kg</span>
+                            </div>
+                            <button>Add to cart!</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
                         <div class="main-items-1-div-top">
                             <div class="main-items-1-div-top-head">
                                 <span class="discount-tag">Discount!</span>
@@ -79,7 +109,7 @@
                             <button>Add to cart!</button>
                         </div>
                     </div>
-                    <div class="main-items-1-div">
+                    <div class="carousel-item">
                         <div class="main-items-1-div-top">
                             <div class="main-items-1-div-top-head">
                                 <span class="discount-tag">Discount!</span>
@@ -90,7 +120,7 @@
                             <img src="img/items/banana.png" alt="">
                         </div>
                         <div class="main-items-1-div-bot">
-                            <p>Fresh bananas from Guatemala</p>
+                            <p>Fresh bananas from Mexico</p>
                             <div class="main-items-1-div-bot-price">
                                 <span>1,03€</span> <br>
                                 <span>5,91€/kg</span>
@@ -98,7 +128,7 @@
                             <button>Add to cart!</button>
                         </div>
                     </div>
-                    <div class="main-items-1-div">
+                    <div class="carousel-item">
                         <div class="main-items-1-div-top">
                             <div class="main-items-1-div-top-head">
                                 <span class="discount-tag">Discount!</span>
@@ -109,7 +139,7 @@
                             <img src="img/items/banana.png" alt="">
                         </div>
                         <div class="main-items-1-div-bot">
-                            <p>Fresh bananas from Guatemala</p>
+                            <p>Fresh bananas from Antartica</p>
                             <div class="main-items-1-div-bot-price">
                                 <span>1,03€</span> <br>
                                 <span>5,91€/kg</span>
@@ -117,7 +147,7 @@
                             <button>Add to cart!</button>
                         </div>
                     </div>
-                    <div class="main-items-1-div">
+                    <div class="carousel-item">
                         <div class="main-items-1-div-top">
                             <div class="main-items-1-div-top-head">
                                 <span class="discount-tag">Discount!</span>
@@ -128,7 +158,7 @@
                             <img src="img/items/banana.png" alt="">
                         </div>
                         <div class="main-items-1-div-bot">
-                            <p>Fresh bananas from Guatemala</p>
+                            <p>Fresh bananas from Finland</p>
                             <div class="main-items-1-div-bot-price">
                                 <span>1,03€</span> <br>
                                 <span>5,91€/kg</span>
@@ -157,198 +187,143 @@
         <div id="main-discount">
             <h1>Great Discounts</h1>
             <p>You shouldn't miss these or you might cry in your sleep.</p>
-            <section id="main-discount-sec">
-                <div class="main-items-1-div">
-                    <div class="main-items-1-div-top">
-                        <div class="main-items-1-div-top-head">
-                            <span class="discount-tag">Discount!</span>
-                            <button>
-                                <img src="img/heart.png" alt="">
-                            </button>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item-2">
+                        <div class="main-items-1-div-top">
+                            <div class="main-items-1-div-top-head">
+                                <span class="discount-tag">Discount!</span>
+                                <button>
+                                    <img src="img/heart.png" alt="">
+                                </button>
+                            </div>
+                            <img src="img/items/banana.png" alt="">
                         </div>
-                        <img src="img/items/banana.png" alt="">
+                        <div class="main-items-1-div-bot">
+                            <p>Fresh bananas from Guatemala</p>
+                            <div class="main-items-1-div-bot-price">
+                                <span>1,03€</span> <br>
+                                <span>5,91€/kg</span>
+                            </div>
+                            <button>Add to cart!</button>
+                        </div>
                     </div>
-                    <div class="main-items-1-div-bot">
-                        <p>Fresh bananas from Guatemala</p>
-                        <div class="main-items-1-div-bot-price">
-                            <span>1,03€</span> <br>
-                            <span>5,91€/kg</span>
+                    <div class="carousel-item-2">
+                        <div class="main-items-1-div-top">
+                            <div class="main-items-1-div-top-head">
+                                <span class="discount-tag">Discount!</span>
+                                <button>
+                                    <img src="img/heart.png" alt="">
+                                </button>
+                            </div>
+                            <img src="img/items/banana.png" alt="">
                         </div>
-                        <button>Add to cart!</button>
+                        <div class="main-items-1-div-bot">
+                            <p>Fresh bananas from Guatemala</p>
+                            <div class="main-items-1-div-bot-price">
+                                <span>1,03€</span> <br>
+                                <span>5,91€/kg</span>
+                            </div>
+                            <button>Add to cart!</button>
+                        </div>
                     </div>
-                </div>
-                <div class="main-items-1-div">
-                    <div class="main-items-1-div-top">
-                        <div class="main-items-1-div-top-head">
-                            <span class="discount-tag">Discount!</span>
-                            <button>
-                                <img src="img/heart.png" alt="">
-                            </button>
+                    <div class="carousel-item-2">
+                        <div class="main-items-1-div-top">
+                            <div class="main-items-1-div-top-head">
+                                <span class="discount-tag">Discount!</span>
+                                <button>
+                                    <img src="img/heart.png" alt="">
+                                </button>
+                            </div>
+                            <img src="img/items/banana.png" alt="">
                         </div>
-                        <img src="img/items/banana.png" alt="">
+                        <div class="main-items-1-div-bot">
+                            <p>Fresh bananas from Guatemala</p>
+                            <div class="main-items-1-div-bot-price">
+                                <span>1,03€</span> <br>
+                                <span>5,91€/kg</span>
+                            </div>
+                            <button>Add to cart!</button>
+                        </div>
                     </div>
-                    <div class="main-items-1-div-bot">
-                        <p>Fresh bananas from Guatemala</p>
-                        <div class="main-items-1-div-bot-price">
-                            <span>1,03€</span> <br>
-                            <span>5,91€/kg</span>
+                    <div class="carousel-item-2">
+                        <div class="main-items-1-div-top">
+                            <div class="main-items-1-div-top-head">
+                                <span class="discount-tag">Discount!</span>
+                                <button>
+                                    <img src="img/heart.png" alt="">
+                                </button>
+                            </div>
+                            <img src="img/items/banana.png" alt="">
                         </div>
-                        <button>Add to cart!</button>
+                        <div class="main-items-1-div-bot">
+                            <p>Fresh bananas from Guatemala</p>
+                            <div class="main-items-1-div-bot-price">
+                                <span>1,03€</span> <br>
+                                <span>5,91€/kg</span>
+                            </div>
+                            <button>Add to cart!</button>
+                        </div>
                     </div>
-                </div>
-                <div class="main-items-1-div">
-                    <div class="main-items-1-div-top">
-                        <div class="main-items-1-div-top-head">
-                            <span class="discount-tag">Discount!</span>
-                            <button>
-                                <img src="img/heart.png" alt="">
-                            </button>
+                    <div class="carousel-item-2">
+                        <div class="main-items-1-div-top">
+                            <div class="main-items-1-div-top-head">
+                                <span class="discount-tag">Discount!</span>
+                                <button>
+                                    <img src="img/heart.png" alt="">
+                                </button>
+                            </div>
+                            <img src="img/items/banana.png" alt="">
                         </div>
-                        <img src="img/items/banana.png" alt="">
+                        <div class="main-items-1-div-bot">
+                            <p>Fresh bananas from Guatemala</p>
+                            <div class="main-items-1-div-bot-price">
+                                <span>1,03€</span> <br>
+                                <span>5,91€/kg</span>
+                            </div>
+                            <button>Add to cart!</button>
+                        </div>
                     </div>
-                    <div class="main-items-1-div-bot">
-                        <p>Fresh bananas from Guatemala</p>
-                        <div class="main-items-1-div-bot-price">
-                            <span>1,03€</span> <br>
-                            <span>5,91€/kg</span>
+                    <div class="carousel-item-2">
+                        <div class="main-items-1-div-top">
+                            <div class="main-items-1-div-top-head">
+                                <span class="discount-tag">Discount!</span>
+                                <button>
+                                    <img src="img/heart.png" alt="">
+                                </button>
+                            </div>
+                            <img src="img/items/banana.png" alt="">
                         </div>
-                        <button>Add to cart!</button>
+                        <div class="main-items-1-div-bot">
+                            <p>Fresh bananas from Guatemala</p>
+                            <div class="main-items-1-div-bot-price">
+                                <span>1,03€</span> <br>
+                                <span>5,91€/kg</span>
+                            </div>
+                            <button>Add to cart!</button>
+                        </div>
                     </div>
-                </div>
-                <div class="main-items-1-div">
-                    <div class="main-items-1-div-top">
-                        <div class="main-items-1-div-top-head">
-                            <span class="discount-tag">Discount!</span>
-                            <button>
-                                <img src="img/heart.png" alt="">
-                            </button>
+                    <div class="carousel-item-2">
+                        <div class="main-items-1-div-top">
+                            <div class="main-items-1-div-top-head">
+                                <span class="discount-tag">Discount!</span>
+                                <button>
+                                    <img src="img/heart.png" alt="">
+                                </button>
+                            </div>
+                            <img src="img/items/banana.png" alt="">
                         </div>
-                        <img src="img/items/banana.png" alt="">
-                    </div>
-                    <div class="main-items-1-div-bot">
-                        <p>Fresh bananas from Guatemala</p>
-                        <div class="main-items-1-div-bot-price">
-                            <span>1,03€</span> <br>
-                            <span>5,91€/kg</span>
+                        <div class="main-items-1-div-bot">
+                            <p>Fresh bananas from Guatemala</p>
+                            <div class="main-items-1-div-bot-price">
+                                <span>1,03€</span> <br>
+                                <span>5,91€/kg</span>
+                            </div>
+                            <button>Add to cart!</button>
                         </div>
-                        <button>Add to cart!</button>
-                    </div>
-                </div>
-                <div class="main-items-1-div">
-                    <div class="main-items-1-div-top">
-                        <div class="main-items-1-div-top-head">
-                            <span class="discount-tag">Discount!</span>
-                            <button>
-                                <img src="img/heart.png" alt="">
-                            </button>
-                        </div>
-                        <img src="img/items/banana.png" alt="">
-                    </div>
-                    <div class="main-items-1-div-bot">
-                        <p>Fresh bananas from Guatemala</p>
-                        <div class="main-items-1-div-bot-price">
-                            <span>1,03€</span> <br>
-                            <span>5,91€/kg</span>
-                        </div>
-                        <button>Add to cart!</button>
-                    </div>
-                </div>
-                <div class="main-items-1-div">
-                    <div class="main-items-1-div-top">
-                        <div class="main-items-1-div-top-head">
-                            <span class="discount-tag">Discount!</span>
-                            <button>
-                                <img src="img/heart.png" alt="">
-                            </button>
-                        </div>
-                        <img src="img/items/banana.png" alt="">
-                    </div>
-                    <div class="main-items-1-div-bot">
-                        <p>Fresh bananas from Guatemala</p>
-                        <div class="main-items-1-div-bot-price">
-                            <span>1,03€</span> <br>
-                            <span>5,91€/kg</span>
-                        </div>
-                        <button>Add to cart!</button>
-                    </div>
-                </div>
-                <div class="main-items-1-div">
-                    <div class="main-items-1-div-top">
-                        <div class="main-items-1-div-top-head">
-                            <span class="discount-tag">Discount!</span>
-                            <button>
-                                <img src="img/heart.png" alt="">
-                            </button>
-                        </div>
-                        <img src="img/items/banana.png" alt="">
-                    </div>
-                    <div class="main-items-1-div-bot">
-                        <p>Fresh bananas from Guatemala</p>
-                        <div class="main-items-1-div-bot-price">
-                            <span>1,03€</span> <br>
-                            <span>5,91€/kg</span>
-                        </div>
-                        <button>Add to cart!</button>
-                    </div>
-                </div>
-                <div class="main-items-1-div">
-                    <div class="main-items-1-div-top">
-                        <div class="main-items-1-div-top-head">
-                            <span class="discount-tag">Discount!</span>
-                            <button>
-                                <img src="img/heart.png" alt="">
-                            </button>
-                        </div>
-                        <img src="img/items/banana.png" alt="">
-                    </div>
-                    <div class="main-items-1-div-bot">
-                        <p>Fresh bananas from Guatemala</p>
-                        <div class="main-items-1-div-bot-price">
-                            <span>1,03€</span> <br>
-                            <span>5,91€/kg</span>
-                        </div>
-                        <button>Add to cart!</button>
                     </div>
                 </div>
-                <div class="main-items-1-div">
-                    <div class="main-items-1-div-top">
-                        <div class="main-items-1-div-top-head">
-                            <span class="discount-tag">Discount!</span>
-                            <button>
-                                <img src="img/heart.png" alt="">
-                            </button>
-                        </div>
-                        <img src="img/items/banana.png" alt="">
-                    </div>
-                    <div class="main-items-1-div-bot">
-                        <p>Fresh bananas from Guatemala</p>
-                        <div class="main-items-1-div-bot-price">
-                            <span>1,03€</span> <br>
-                            <span>5,91€/kg</span>
-                        </div>
-                        <button>Add to cart!</button>
-                    </div>
-                </div>
-                <div class="main-items-1-div">
-                    <div class="main-items-1-div-top">
-                        <div class="main-items-1-div-top-head">
-                            <span class="discount-tag">Discount!</span>
-                            <button>
-                                <img src="img/heart.png" alt="">
-                            </button>
-                        </div>
-                        <img src="img/items/banana.png" alt="">
-                    </div>
-                    <div class="main-items-1-div-bot">
-                        <p>Fresh bananas from Guatemala</p>
-                        <div class="main-items-1-div-bot-price">
-                            <span>1,03€</span> <br>
-                            <span>5,91€/kg</span>
-                        </div>
-                        <button>Add to cart!</button>
-                    </div>
-                </div>
-            </section>
+            </div>
         </div>
 
         <section id="main-recommend">
@@ -379,7 +354,7 @@
             <div id="main-job-info">
                 <h2>Job applications</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit odio accusamus nihil a! Esse voluptate totam nobis alias accusantium est sunt suscipit! Maxime voluptatum quae adipisci quibusdam tenetur? Quam, dolorum?</p>
-                <button>Take me to the job opportunities</button>
+                <a href="job.html"><button>Take me to the job opportunities</button></a>
             </div>
         </section>
 
@@ -447,5 +422,7 @@
             <div class="button-n">Nearest MM</div>
         </div>
     </footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html>

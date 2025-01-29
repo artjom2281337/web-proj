@@ -9,11 +9,24 @@ header {
     background-color: white;
     border-bottom: 2px solid rgb(230, 230, 230);
 
-    display: flex;
+    display: grid;
+    grid-template-columns: 5% 20% 60% 10% 5%;
     align-items: center;
     justify-content: space-between;
 
     padding: 5px 30px;
+}
+
+.menu, .logo, .searchbar, .entry, .cart {
+    grid-row: 1;
+}
+
+/* .searchbar {
+    grid-column: 3 / 5;
+} */
+
+.logo h1 {
+    font-size: 28px;
 }
 
 header button {
@@ -70,7 +83,6 @@ header img {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 30px;
 
     color: rgb(255, 134, 20);
     font-size: 20px;
@@ -82,7 +94,7 @@ header img {
 }
 
 #searchbar-div {
-    width: 30%;
+    width: 100%;
 }
 
 #searchbar-div input::placeholder {
@@ -90,6 +102,7 @@ header img {
 }
 
 header input {
+    width: 90%;
     padding: 10px 10px;
     font-size: 18px;
 
@@ -159,4 +172,38 @@ footer{
 
 .footer-section a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 1000px) {
+    header {
+        grid-template-columns: 4% 25% 45% 12% 4%;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    header {
+        grid-template-columns: 5% 31% 34% 15% 5%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        grid-template-columns: 10% 35% 20% 10% 0%;
+    }
+
+    .logo h1 {
+        font-size: 16px;
+    }
+
+    .menu, .logo, .entry, .cart {
+        grid-row: 1;
+    }
+
+    .searchbar {
+        grid-column: 1 / 5;
+        grid-row: 2;
+        margin-left: 25px;
+    }
 }
