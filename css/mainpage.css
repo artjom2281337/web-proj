@@ -55,6 +55,11 @@
     font-size: large;
 }
 
+#main-items-1 .discount-tag {
+    color: white;
+    user-select: none;
+}
+
 #main-items-1 p {
     font-size: 20px;
     margin-bottom: 40px;
@@ -62,13 +67,15 @@
 
 #main-items-1-content {
     display: flex;
+    align-items:self-start;
 }
 
 #main-items-1-containers {
     flex: 1;
     padding: 0 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .main-items-1-div {
@@ -78,6 +85,7 @@
     background-color: white;
     border-radius: 15px;
     padding: 15px;
+    margin: 15px;
 }
 
 .main-items-1-div-top {
@@ -266,3 +274,49 @@
     margin-top: 30px;
 }
 
+@media only screen and (max-width: 1610px) {
+    #main-items-1-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main-items-1-containers {
+        justify-content: center;
+
+    }
+
+    #main-membership {
+        flex-direction: column;
+    }
+
+    #main-mem-img {
+        justify-content: center;
+        width: 100%;
+    }
+
+    #main-mem-img > img {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    #main-app-sec {
+        flex-direction: column;
+    }
+
+    #main-app-info, #main-app-img {
+        width: 100%;
+    }
+
+    #main-app-info {
+        padding: 0;
+    }
+
+    #main-job {
+        flex-direction: column;
+    }
+
+    #main-job-img-div, #main-job-info {
+        width: 100%;
+        padding: 0;
+    }
+}
