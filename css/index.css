@@ -124,6 +124,11 @@
     padding: 5px;
 }
 
+#main-mem-info button a {
+    text-decoration: none;
+    color: white;
+}
+
 #main-mem-info p {
     font-size: 24px;
 }
@@ -259,6 +264,11 @@
     background-color: orangered;
     color: white;
     padding: 5px;
+}
+
+.main-items-1-div-bot button a {
+    text-decoration: none;
+    color: white;
 }
 
 .main-items-1-div-bot-price > span:first-child {

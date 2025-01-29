@@ -109,7 +109,7 @@ aside#cart-total {
 
 .cart-delete {
     display: flex;
-    width: 150px;
+    width: 180px;
 }
 
 .cart-delete img {
@@ -207,6 +207,7 @@ aside#cart-total {
     color: white;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1000px) {
